@@ -33,3 +33,13 @@ function finding_longest(arr){
   
 
   
+  function x(array1, array2) {
+    let len = array1.length < array2.length ? array1.length : array2.length;
+    arr = array1.length < array2.length ? array2 : array1;
+    arr2 = array1.length < array2.length ? array1 : array2;
+    for (let i = 0; i < len; i++) {
+    
+      arr[i] += arr2[i];
+    }
+    return arr;
+  }
